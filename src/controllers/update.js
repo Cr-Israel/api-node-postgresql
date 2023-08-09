@@ -9,5 +9,10 @@ export async function update (req, res) {
     [productName, quantity, price, id]
   )
 
-  res.status(200).send({ message: 'Product Updated Successfully!', newProduct })
+  res.status(200).send({
+    message: 'Product Updated Successfully!',
+    body: {
+      product: { productName, quantity, price }
+    }
+  })
 }
