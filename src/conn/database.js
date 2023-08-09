@@ -6,10 +6,9 @@ dotenv.config()
 // Conection with Database
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL
-}).on('connect', () => {
-  console.log('Conectado com a Database')
-}).catch(error => {
-  console.error('Deu erro aqui na conexão com o Banco: ' + error)
+})
+pool.on('connect', () => {
+  console.log('Connected to Database')
 })
 
 export default {
