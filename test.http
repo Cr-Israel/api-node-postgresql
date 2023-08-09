@@ -1,2 +1,20 @@
-### GET ROUTE
-GET http://localhost:5000/products
+### ROUTE API
+GET http://localhost:5000/api HTTP/1.1
+
+### POST A PRODUCT
+POST http://localhost:5000/api/products HTTP/1.1
+Content-Type: application/json
+
+{
+    "productName": "Geladeira",
+    "quantity": 10,
+    "price": 499.90
+}
+
+### GET ALL PRODUCTS
+GET http://localhost:5000/api/products HTTP/1.1
+
+### GET BY ID
+GET http://localhost:5000/api/products/2 HTTP/1.1
+
+### UPDATE A PRODUCT
