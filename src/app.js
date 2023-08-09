@@ -3,7 +3,7 @@ import cors from 'cors'
 
 // Routes
 import index from './routes/index.js'
-// import productRoute from './routes/productRoute.js'
+import productRoute from './routes/productRoute.js'
 
 const app = express()
 
@@ -14,6 +14,6 @@ app.use(express.json({ type: 'aplication/vnd.api+json' }))
 app.use(cors())
 
 app.use(index)
-// app.use('/products', productRoute)
+app.use('/api/', productRoute)
 
 export default app
