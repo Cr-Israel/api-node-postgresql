@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" width=256 alt="GIMP">
+  <img src="https://blog.appsignal.com/_next/image?url=%2Fimages%2Fblog%2F2022-08%2Fcrud-nodejs-mongo.jpg&w=3840&q=50" width=256 alt="GIMP">
   <br />
   API-Node-PostgreSQL | <a href="https://github.com/Cr-Israel/api-node-postgresql">Access</a>
 </h1>
