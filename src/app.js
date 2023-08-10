@@ -1,8 +1,9 @@
 import express from 'express'
 import cors from 'cors'
+import swaggerUi from 'swagger-ui-express'
+import swaggerFile from './swagger_output.json'
 
 // Routes
-import index from './routes/index.js'
 import productRoute from './routes/productRoute.js'
 
 const app = express()
@@ -13,7 +14,9 @@ app.use(express.json())
 app.use(express.json({ type: 'aplication/vnd.api+json' }))
 app.use(cors())
 
-app.use(index)
-app.use('/api/', productRoute)
+// Doc
+app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
+
+app.use(productRoute)
 
 export default app

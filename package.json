@@ -7,7 +7,8 @@
     "start": "node src/server.js",
     "dev": "tsx watch src/server.js",
     "build": "tsup src",
-    "test": "vitest"
+    "test": "vitest",
+    "swagger-autogen": "node src/swagger.js"
   },
   "keywords": [
     "node.js",
@@ -31,6 +32,8 @@
     "eslint-plugin-n": "^16.0.1",
     "eslint-plugin-promise": "^6.1.1",
     "husky": "^8.0.3",
+    "swagger-autogen": "^2.23.5",
+    "swagger-ui-express": "^5.0.0",
     "tsup": "^7.2.0",
     "tsx": "^3.12.7",
     "vitest": "^0.34.1"

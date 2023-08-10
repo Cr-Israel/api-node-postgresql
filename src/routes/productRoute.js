@@ -7,6 +7,13 @@ import { remove } from '../controllers/remove.js'
 
 const router = expressPromiseRouter()
 
+router.get('/api', (req, res) => {
+  res.status(200).send({
+    success: 'true',
+    message: 'Welcome to API Node.js + PostgreSQL!',
+    version: '1.0.0'
+  })
+})
 router.post('/products', createProduct)
 router.get('/products', listAllProducts)
 router.get('/products/:id', findById)
